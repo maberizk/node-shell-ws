@@ -1,7 +1,7 @@
-const fs = require('fs');
 
 module.exports = () => {
-    process.stdout.write(fs.readdir() + "\n");
+    const fs = require('fs');
+    // process.stdout.write(fs.readdir() + "\n");
     // `files` will be an array of filenames, like ['bash.js', 'pwd.js']
     fs.readdir('./', 'utf8', (err, files) => {
         if (err) {
